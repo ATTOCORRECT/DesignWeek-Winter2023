@@ -8,11 +8,13 @@ public class CameraRotation : MonoBehaviour
     public GameObject mCamera;
     public GameObject leftButton;
     public GameObject rightButton;
+
     [SerializeField] float rotationSpeed;
     Vector3 targetEulerAngles;
     Vector3 currentEulerAngles;
     [SerializeField] float y;
     //float yAngleModulus;
+
     bool turnLeft;
     bool turnRight;
 
@@ -53,8 +55,6 @@ public class CameraRotation : MonoBehaviour
                 rightButton.GetComponent<Button>().interactable = true;
             }
         }
-        
-        
     }
 
     public void RotateCameraLeft()

@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class ExampleClass : MonoBehaviour
 {
+    Texture2D texture;
     void Start()
     {
-        Texture2D texture = new Texture2D(128, 128);
-        GetComponent<SpriteRenderer>().sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
+        texture = new Texture2D(128, 128);
+        GetComponent<RawImage>().texture = texture;
 
         for (int y = 0; y < texture.height; y++)
         {
@@ -22,5 +23,12 @@ public class ExampleClass : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(Input.mousePosition);
+
+        if (Input.GetMouseButton(0))
+        {
+            texture.SetPixel((int)Input.mousePosition[0], (int)Input.mousePosition[1], Color.red);
+            texture.Apply();
+        }
     }
 }

@@ -66,8 +66,6 @@ public class PaintingCanvasManager : MonoBehaviour
 
                 Vector2 mousePosition = new Vector2(Input.mousePosition.x - topLeft.x, topLeft.y - Input.mousePosition.y);
 
-                Debug.Log(Input.mousePosition);
-
                 RenderTexture.active = renderTexture;
                 GL.PushMatrix();
 

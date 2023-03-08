@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour
+public class SceneTransitionManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,15 @@ public class Door : MonoBehaviour
 
     private void OnMouseDown()
     {
+        ToGallery();
+    }
+    
+    public void ToGallery()
+    {
         SceneManager.LoadScene("Title Screen");
+    }
+    public void ToStudio()
+    {
+        SceneManager.LoadScene("Samuel's Test Scene");
     }
 }

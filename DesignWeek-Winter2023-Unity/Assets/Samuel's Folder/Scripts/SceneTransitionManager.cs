@@ -23,6 +23,10 @@ public class SceneTransitionManager : MonoBehaviour
         {
             ToGallery();
         }
+        if(gameObject.CompareTag("Canvas"))
+        {
+            ToCanvas();
+        }
     }
     
     public void ToGallery()
@@ -32,5 +36,9 @@ public class SceneTransitionManager : MonoBehaviour
     public void ToStudio()
     {
         SceneManager.LoadScene("PaintRoomScene");
+    }
+    public void ToCanvas()
+    {
+        SceneManager.LoadScene("PaintingEditorScene");
     }
 }

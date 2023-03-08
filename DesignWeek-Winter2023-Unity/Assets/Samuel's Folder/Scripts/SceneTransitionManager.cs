@@ -19,7 +19,10 @@ public class SceneTransitionManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        ToGallery();
+        if(gameObject.CompareTag("Door"))
+        {
+            ToGallery();
+        }
     }
     
     public void ToGallery()

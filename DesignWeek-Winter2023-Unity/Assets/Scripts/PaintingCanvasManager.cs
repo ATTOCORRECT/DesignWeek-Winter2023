@@ -7,8 +7,8 @@ public class PaintingCanvasManager : MonoBehaviour
     public RenderTexture renderTexture;
 
     public Texture2D brushPattern;
-    Color brushColor = Color.white;
-    int brushType = 2;
+    Color brushColor = Color.black;
+    int brushType = 1;
     int rotation = 0;
     float rotationVariance = 0f;
     Vector2 positionVariance = new Vector2(0,0);
@@ -27,10 +27,17 @@ public class PaintingCanvasManager : MonoBehaviour
 
     private void Update()
     {
+
+        
+
         switch (brushType)
         {
             case 1: // stroke
                 mouseDown = Input.GetMouseButton(0);
+                if (Input.touchCount > 0)
+                {
+                    mouseDown = true;
+                }
                 break;
 
             case 2: // stamp
@@ -58,6 +65,8 @@ public class PaintingCanvasManager : MonoBehaviour
                 mouseDown = false;
 
                 Vector2 mousePosition = new Vector2(Input.mousePosition.x - topLeft.x, topLeft.y - Input.mousePosition.y);
+
+                Debug.Log(Input.mousePosition);
 
                 RenderTexture.active = renderTexture;
                 GL.PushMatrix();

@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Samuel's Folder/Scenes/Title Screen.unity
+    guid: 60393b509b8bf29469514a9ee9db892d
+  - enabled: 1
+    path: Assets/Samuel's Folder/Scenes/Samuel's Test Scene.unity
+    guid: 367f49355e031ac43963bb4883f092f5
   m_configObjects: {}

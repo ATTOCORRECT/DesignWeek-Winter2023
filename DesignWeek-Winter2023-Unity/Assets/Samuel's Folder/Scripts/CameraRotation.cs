@@ -33,12 +33,14 @@ public class CameraRotation : MonoBehaviour
             {
                 y = -1;
                 leftButton.GetComponent<Button>().interactable = false;
+                rightButton.GetComponent<Button>().interactable = false;
             }
             else if (currentEulerAngles.y <= targetEulerAngles.y)
             {
                 y = 0;
                 turnLeft = false;
                 leftButton.GetComponent<Button>().interactable = true;
+                rightButton.GetComponent<Button>().interactable = true;
             }
         }
         if(turnRight)
@@ -46,12 +48,14 @@ public class CameraRotation : MonoBehaviour
             if (currentEulerAngles.y <= targetEulerAngles.y)
             {
                 y = 1;
+                leftButton.GetComponent<Button>().interactable = false;
                 rightButton.GetComponent<Button>().interactable = false;
             }
             else if (currentEulerAngles.y >= targetEulerAngles.y)
             {
                 y = 0;
                 turnRight = false;
+                leftButton.GetComponent<Button>().interactable = true;
                 rightButton.GetComponent<Button>().interactable = true;
             }
         }

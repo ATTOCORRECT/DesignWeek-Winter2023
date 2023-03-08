@@ -13,7 +13,7 @@ public class SelectionManager : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject); 
+        //DontDestroyOnLoad(this.gameObject); 
     }
     // Update is called once per frame
     void Update()
@@ -30,7 +30,6 @@ public class SelectionManager : MonoBehaviour
             brushObjs[i].gameObject.SetActive(true);
             if(i == brushObjs.Count - 1)
             {
-                Debug.Log("end of loop");
                 itemResetComplete = true;
             }
         }

@@ -27,10 +27,10 @@ public class SceneTransitionManager : MonoBehaviour
     
     public void ToGallery()
     {
-        SceneManager.LoadScene("Title Screen");
+        SceneManager.LoadScene("GalleryScene");
     }
     public void ToStudio()
     {
-        SceneManager.LoadScene("Samuel's Test Scene");
+        SceneManager.LoadScene("PaintRoomScene");
     }
 }

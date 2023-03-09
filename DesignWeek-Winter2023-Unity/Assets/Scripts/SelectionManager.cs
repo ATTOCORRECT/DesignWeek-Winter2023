@@ -47,7 +47,7 @@ public class SelectionManager : MonoBehaviour
             icons[itemInHand].gameObject.SetActive(true);
             gameObject.SetActive(false);
         }
-
+        Debug.Log(itemInHand);
         GameObject.Find("Brush Manager").GetComponent<BrushManager>().setBrushIndex(itemInHand);
     }
 }

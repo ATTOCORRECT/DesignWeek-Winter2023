@@ -24,7 +24,6 @@ public class BrushManager : MonoBehaviour
 
     public void GetBrush(GameObject PaintingCanvas)
     {
-        Debug.Log(brushIndex);
         switch (brushIndex) 
         {
             case 0: // cat

@@ -5,6 +5,15 @@ using UnityEngine;
 public class MaskComparison : MonoBehaviour
 {
 
+    public Texture2D mask;
+    public RenderTexture paint;
+
+    private void Start()
+    {
+        Texture2D paint2D = toTexture2D(paint);
+        Debug.Log(PerecentageMatch(mask, paint2D));
+    }
+
     public float PerecentageMatch(Texture2D original, Texture2D modified)
     {
         //Get width and height of paintings
@@ -69,4 +78,16 @@ public class MaskComparison : MonoBehaviour
 
         return coloredPixels;
     }
+
+    Texture2D toTexture2D(RenderTexture rTex)
+    {
+        Texture2D tex = new Texture2D(512, 512, TextureFormat.RGB24, false);
+        // ReadPixels looks at the active RenderTexture.
+        RenderTexture.active = rTex;
+        tex.ReadPixels(new Rect(0, 0, rTex.width, rTex.height), 0, 0);
+        tex.Apply();
+        return tex;
+    }
 }
+
+

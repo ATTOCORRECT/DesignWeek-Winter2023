@@ -5,7 +5,7 @@ using UnityEngine;
 public class PaletteManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Material[] colorPaletteMaterials;
+    public List<Material> colorPaletteMaterials;
     public GameObject PaintingCanvas;
 
     public void setColorToPalette(int colorIndex)

@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PaintingManager : MonoBehaviour
 {
-    public GameObject PaintingFrame;
-    [SerializeField] List<Material> paintingMats;
-    [SerializeField] List<Material> usedMats;
-    Material currentMat;
-    bool movedPainting;
+    public GameObject PaintingDisplay;
+    [SerializeField] List<Painting> paintings;
+    //[SerializeField] List<Material> usedMats;
+    //Material currentMat;
+    //bool movedPainting;
     // Start is called before the first frame update
     void Start()
     {
-        PaintingFrame.GetComponent<MeshRenderer>().material = PaintingRandomizer();
+        PaintingDisplay.GetComponent<DisplayPainting>().paint = PaintingRandomizer();
     }
 
     // Update is called once per frame
@@ -20,15 +20,15 @@ public class PaintingManager : MonoBehaviour
     {
 
     }
-    Material PaintingRandomizer()
+    Painting PaintingRandomizer()
     {
-        int randomMatIndex = Random.Range(0, paintingMats.Count);
-        Material randomMat = paintingMats[randomMatIndex];
-        return randomMat;
+        int randomPaintIndex = Random.Range(0, paintings.Count);
+        Painting randomPaint = paintings[randomPaintIndex];
+        return randomPaint;
     }
     public void NextPainting()
     {
-        PaintingFrame.GetComponent<MeshRenderer>().material = PaintingRandomizer();
+        PaintingDisplay.GetComponent<DisplayPainting>().paint = PaintingRandomizer();
     }
     //void MovePainting()
     //{

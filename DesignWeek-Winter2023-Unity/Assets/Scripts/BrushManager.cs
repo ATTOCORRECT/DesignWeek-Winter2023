@@ -45,7 +45,7 @@ public class BrushManager : MonoBehaviour
                 break;
 
             case 6: // eraser
-                PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[6], 1, 0, 0.1f, new Vector2(0, 0), 50, 10);
+                PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[6], 1, 0, 0f, new Vector2(0, 0), 50, 10);
                 break;
 
             case 7: // bread
@@ -53,11 +53,11 @@ public class BrushManager : MonoBehaviour
                 break;
 
             case 8: // grass
-                PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[8], 1, 45, 0.1f, new Vector2(100, 5), 50, 10);
+                PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[8], 1, 45, 0f, new Vector2(100, 5), 50, 10);
                 break;
 
             case 9: // mop
-                PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[9], 1, 0, 0.1f, new Vector2(0, 0), 50, 10);
+                PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[9], 1, 0, 0f, new Vector2(0, 0), 50, 10);
                 break;
 
             case 10: // rose
@@ -69,7 +69,7 @@ public class BrushManager : MonoBehaviour
                 break;
 
             case 12: // sponge
-                PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[12], 1, 0, 0.1f, new Vector2(0, 0), 50, 10);
+                PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[12], 1, 0, 0f, new Vector2(0, 0), 50, 10);
                 break;
 
             default:

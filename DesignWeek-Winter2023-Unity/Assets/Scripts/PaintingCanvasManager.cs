@@ -23,6 +23,7 @@ public class PaintingCanvasManager : MonoBehaviour
     BrushManager brushManager;
 
     bool mouseDown = false;
+    bool dynamicRotation = false;
     void Start()
     {
         brushManager = GameObject.Find("Brush Manager").GetComponent<BrushManager>();
@@ -48,6 +49,7 @@ public class PaintingCanvasManager : MonoBehaviour
                 {
                     mouseDown = true;
                 }
+                dynamicRotation = true;
                 break;
 
             case 2: // stamp
@@ -74,20 +76,35 @@ public class PaintingCanvasManager : MonoBehaviour
             {
                 mouseDown = false;
 
-                Vector2 mousePosition = new Vector2(Input.mousePosition.x - topLeft.x, topLeft.y - Input.mousePosition.y);
+                Vector2 oldMousePosition = mousePosition;
 
-                RenderTexture.active = renderTexture;
-                GL.PushMatrix();
+                mousePosition = new Vector2(Input.mousePosition.x - topLeft.x, topLeft.y - Input.mousePosition.y);
 
-                GUIUtility.RotateAroundPivot(rotation + Random.Range(-180 * rotationVariance, 180 * rotationVariance), new Vector2(mousePosition.x, mousePosition.y));
+                Vector2 displacement = mousePosition - oldMousePosition;
 
-                int size = scale + Random.Range(-scaleVariance, scaleVariance);
-                Vector2 position = new Vector2(mousePosition.x + Random.Range(-positionVariance.x, positionVariance.x), mousePosition.y + Random.Range(-positionVariance.y, positionVariance.y));
+                if (displacement.magnitude > 0.01f) {
+                    RenderTexture.active = renderTexture;
+                    GL.PushMatrix();
 
-                Graphics.DrawTexture(new Rect(position.x - size / 2, position.y - size / 2, size, size), brushPattern, new Rect(0, 0, 1, 1), 0, 0, 0, 0, brushColor, null, -1);
-                
-                GL.PopMatrix();
-                RenderTexture.active = null;
+                    int dynamicRotationAngle = 0;
+                    if (dynamicRotation)
+                    {
+                        dynamicRotationAngle = (int)(Mathf.Rad2Deg * Mathf.Atan2(displacement.y, displacement.x));
+                        dynamicRotation = false;
+
+                        Debug.Log("trigger");
+                    }
+
+                    GUIUtility.RotateAroundPivot(dynamicRotationAngle + rotation + Random.Range(-180 * rotationVariance, 180 * rotationVariance), new Vector2(mousePosition.x, mousePosition.y));
+
+                    int size = scale + Random.Range(-scaleVariance, scaleVariance);
+                    Vector2 position = new Vector2(mousePosition.x + Random.Range(-positionVariance.x, positionVariance.x), mousePosition.y + Random.Range(-positionVariance.y, positionVariance.y));
+
+                    Graphics.DrawTexture(new Rect(position.x - size / 2, position.y - size / 2, size, size), brushPattern, new Rect(0, 0, 1, 1), 0, 0, 0, 0, brushColor, null, -1);
+
+                    GL.PopMatrix();
+                    RenderTexture.active = null;
+                }
             }
         }
     }

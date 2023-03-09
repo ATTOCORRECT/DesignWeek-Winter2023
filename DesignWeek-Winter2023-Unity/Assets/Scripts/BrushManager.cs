@@ -26,7 +26,7 @@ public class BrushManager : MonoBehaviour
     {
         switch (brushIndex) 
         {
-            case 0: // cat
+            case 0: // cat          texture to use | type (1-stroke, 2-stamp) | degrees default rotation | 0 - 1 rotation randomization | pixel position variation x & y | pixel size | pixel size variation +/- value    
                 PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[0], 1, 0, 0.1f, new Vector2(0, 0), 50, 10);
                 break;
 

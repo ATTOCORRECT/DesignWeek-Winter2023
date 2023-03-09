@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Windows;
+
 public class PaintingCanvasManager : MonoBehaviour
 {
     public RenderTexture renderTexture;
@@ -24,6 +26,9 @@ public class PaintingCanvasManager : MonoBehaviour
 
     bool mouseDown = false;
     bool dynamicRotation = false;
+
+    int count = 0;
+
     void Start()
     {
         brushManager = GameObject.Find("Brush Manager").GetComponent<BrushManager>();
@@ -34,7 +39,10 @@ public class PaintingCanvasManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+
+
+
+        if (UnityEngine.Input.GetMouseButtonDown(0))
         {
             brushManager.setLastUsedColor(brushColor , gameObject);
             brushManager.GetBrush(gameObject);  
@@ -44,8 +52,8 @@ public class PaintingCanvasManager : MonoBehaviour
         switch (brushType)
         {
             case 1: // stroke
-                mouseDown = Input.GetMouseButton(0);
-                if (Input.touchCount > 0)
+                mouseDown = UnityEngine.Input.GetMouseButton(0);
+                if (UnityEngine.Input.touchCount > 0)
                 {
                     mouseDown = true;
                 }
@@ -53,7 +61,7 @@ public class PaintingCanvasManager : MonoBehaviour
                 break;
 
             case 2: // stamp
-                mouseDown = Input.GetMouseButtonDown(0);
+                mouseDown = UnityEngine.Input.GetMouseButtonDown(0);
                 break;
 
             case 3: // directional stamp
@@ -78,7 +86,7 @@ public class PaintingCanvasManager : MonoBehaviour
 
                 Vector2 oldMousePosition = mousePosition;
 
-                mousePosition = new Vector2(Input.mousePosition.x - topLeft.x, topLeft.y - Input.mousePosition.y);
+                mousePosition = new Vector2(UnityEngine.Input.mousePosition.x - topLeft.x, topLeft.y - UnityEngine.Input.mousePosition.y);
 
                 Vector2 displacement = mousePosition - oldMousePosition;
 
@@ -145,5 +153,18 @@ public class PaintingCanvasManager : MonoBehaviour
     public void setBrushColor(Color brushColor)
     {
         this.brushColor = brushColor;
+    }
+    public void ExportPaintingCanvas()
+    {
+        string pngOutPath = @"";
+
+        var tex = new Texture2D(renderTexture.width, renderTexture.height);
+        RenderTexture.active = renderTexture;
+        tex.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
+        tex.Apply();
+
+        File.WriteAllBytes(pngOutPath + System.DateTime.Now.ToString("yyyy-mm-dd-hh-mm-ss") + ".png", tex.EncodeToPNG());
+        //File.WriteAllBytes("texture.png", tex.EncodeToPNG());
+        RenderTexture.active = null;
     }
 }

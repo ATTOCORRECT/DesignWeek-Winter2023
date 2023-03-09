@@ -45,19 +45,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brushTextures:
+  - {fileID: 2800000, guid: 6531d8bb10e89074786fab9ffb15e83f, type: 3}
+  - {fileID: 2800000, guid: be7fd270a48dc9f46b20b1800f83611e, type: 3}
   - {fileID: 2800000, guid: 9516c44b3e8f659428ab53dfe46f8f00, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
-  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 501b81f2b85c11c4a85f91c53b3def79, type: 3}
+  - {fileID: 2800000, guid: 0f81c6fa1cb633e44aaa329a5d3294ca, type: 3}
+  - {fileID: 2800000, guid: f709c05eee189c540947d95aa70ac107, type: 3}
+  - {fileID: 2800000, guid: c9e7fb70b61376b42a1a29c10cd9132c, type: 3}
+  - {fileID: 2800000, guid: 5904ddb0cd295c34b9a6aa608a4af44f, type: 3}
+  - {fileID: 2800000, guid: 68e4a3e529a391a4ab1c107d67ccb743, type: 3}
+  - {fileID: 2800000, guid: 40c805272ed84a742992efea3d58fab9, type: 3}
+  - {fileID: 2800000, guid: d87489a0881a4404191cb2de9d68dea6, type: 3}
+  - {fileID: 2800000, guid: 69818e284dbfb6944a6030269356ac31, type: 3}
+  - {fileID: 2800000, guid: aa4c1af470a1f2b4ab766f03b8775911, type: 3}
   - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
   - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
   - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}

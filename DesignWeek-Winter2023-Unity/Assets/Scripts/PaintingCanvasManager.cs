@@ -7,7 +7,7 @@ public class PaintingCanvasManager : MonoBehaviour
     public RenderTexture renderTexture;
 
     public Texture2D brushPattern;
-    Color brushColor = Color.black;
+    Color brushColor = Color.magenta;
     int brushType = 1;
     int rotation = 0;
     float rotationVariance = 0f;
@@ -17,6 +17,8 @@ public class PaintingCanvasManager : MonoBehaviour
 
     Vector2 topLeft;
     Vector2 paintingCanvasSize;
+
+    Vector2 mousePosition;
 
     BrushManager brushManager;
 
@@ -33,7 +35,8 @@ public class PaintingCanvasManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            brushManager.GetBrush(gameObject);
+            brushManager.setLastUsedColor(brushColor , gameObject);
+            brushManager.GetBrush(gameObject);  
         }
         
 

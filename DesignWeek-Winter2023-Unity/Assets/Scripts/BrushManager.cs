@@ -5,10 +5,15 @@ public class BrushManager : MonoBehaviour
 {
     public Texture2D[] brushTextures;
     int brushIndex = 0;
-
+    Color lastUsedColor = Color.magenta;
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+    }
+
+    private void Update()
+    {
+        Debug.Log(lastUsedColor);
     }
 
     public void GetBrush(GameObject PaintingCanvas)
@@ -70,11 +75,34 @@ public class BrushManager : MonoBehaviour
             default:
                 PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushPattern(brushTextures[0], 1, 0, 0, new Vector2(0, 0), 64, 0);
                 break;
+
+               
         }
+        
     }
 
     public void setBrushIndex(int brushIndex)
     {
         this.brushIndex = brushIndex;
+    }
+
+    public void setLastUsedColor(Color lastUsedColor, GameObject PaintingCanvas)
+    {
+        if (lastUsedColor == Color.magenta)
+        {
+            if (this.lastUsedColor == Color.magenta)
+            {
+                GameObject.Find("Palette Manager").GetComponent<PaletteManager>().setColorToPalette(0);
+            }
+            else
+            {
+                PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushColor(this.lastUsedColor);
+            }
+           
+        }
+        else
+        {
+            this.lastUsedColor = lastUsedColor;
+        }
     }
 }

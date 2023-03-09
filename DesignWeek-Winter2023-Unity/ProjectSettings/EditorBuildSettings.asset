@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samuel's Folder/Scenes/Title Screen.unity
+    path: Assets/Scenes/Title Screen.unity
     guid: 60393b509b8bf29469514a9ee9db892d
   - enabled: 1
     path: Assets/Samuel's Folder/Scenes/Samuel's Test Scene.unity

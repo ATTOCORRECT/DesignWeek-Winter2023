@@ -44,3 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48df9096dd94c4749a7d91b575baff40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brushTextures:
+  - {fileID: 2800000, guid: 9516c44b3e8f659428ab53dfe46f8f00, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}
+  - {fileID: 2800000, guid: 0108878e63e0a874e98e4dfac0c702ef, type: 3}

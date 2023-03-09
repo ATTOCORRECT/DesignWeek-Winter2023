@@ -18,16 +18,23 @@ public class PaintingCanvasManager : MonoBehaviour
     Vector2 topLeft;
     Vector2 paintingCanvasSize;
 
+    BrushManager brushManager;
+
     bool mouseDown = false;
     void Start()
     {
+        brushManager = GameObject.Find("Brush Manager").GetComponent<BrushManager>();
+
         renderTextureSize();
         paintingCanvasValues();
     }
 
     private void Update()
     {
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            brushManager.GetBrush(gameObject);
+        }
         
 
         switch (brushType)
@@ -110,6 +117,8 @@ public class PaintingCanvasManager : MonoBehaviour
         this.positionVariance = positionVariance;
         this.scale = scale;
         this.scaleVariance = scaleVariance;
+
+        Debug.Log(brushPattern);
     }
 
     //color specific

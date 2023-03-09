@@ -9,15 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: 60393b509b8bf29469514a9ee9db892d
   - enabled: 1
-    path: Assets/Samuel's Folder/Scenes/Samuel's Test Scene.unity
-    guid: 367f49355e031ac43963bb4883f092f5
-  - enabled: 1
     path: Assets/Scenes/PaintRoomScene.unity
-    guid: bb5434a4807035a4382567835cce2809
-  - enabled: 1
-    path: Assets/Scenes/GalleryScene.unity
-    guid: a01269a03cfbb8a4ca631e1c1c92a907
+    guid: 7d3c05113f7a3d54dbf5a4868eefed8e
   - enabled: 1
     path: Assets/Scenes/PaintingEditorScene.unity
     guid: 61b99f17ce519c449adc63ec19c2d24f
+  - enabled: 1
+    path: Assets/Scenes/GalleryScene.unity
+    guid: a01269a03cfbb8a4ca631e1c1c92a907
   m_configObjects: {}

@@ -5,18 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitionManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        //DontDestroyOnLoad(gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnMouseDown()
     {
         if(gameObject.CompareTag("Door"))

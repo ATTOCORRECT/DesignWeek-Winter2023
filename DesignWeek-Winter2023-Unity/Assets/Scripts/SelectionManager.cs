@@ -9,17 +9,7 @@ public class SelectionManager : MonoBehaviour
     int itemInHand;
     bool itemResetComplete;
     bool iconResetComplete;
-    //public GameObject hand;
-    // Start is called before the first frame update
-    private void Awake()
-    {
-        //DontDestroyOnLoad(this.gameObject); 
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     private void OnMouseDown()
     {
         itemInHand = brushObjs.IndexOf(gameObject);

@@ -3,23 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 public class BrushManager : MonoBehaviour
 {
-
     public Texture2D[] brushTextures;
     int brushIndex = 0;
 
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-    }
-
-    private void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
     }
 
     public void GetBrush(GameObject PaintingCanvas)

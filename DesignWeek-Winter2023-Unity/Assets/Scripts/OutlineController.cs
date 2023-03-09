@@ -12,11 +12,6 @@ public class OutlineController : MonoBehaviour
         outlineScript.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //Debug.Log(outlineScript);
-    }
     private void OnMouseEnter()
     {
         outlineScript.enabled = true;

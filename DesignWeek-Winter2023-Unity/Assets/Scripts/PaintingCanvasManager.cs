@@ -82,26 +82,29 @@ public class PaintingCanvasManager : MonoBehaviour
 
                 Vector2 displacement = mousePosition - oldMousePosition;
 
-                RenderTexture.active = renderTexture;
-                GL.PushMatrix();
+                if (displacement.magnitude > 0.01f) {
+                    RenderTexture.active = renderTexture;
+                    GL.PushMatrix();
 
-                if (dynamicRotation)
-                {
-                    rotation = (int)(Mathf.Rad2Deg * Mathf.Atan2(displacement.y, displacement.x));
-                    dynamicRotation = false;
+                    int dynamicRotationAngle = 0;
+                    if (dynamicRotation)
+                    {
+                        dynamicRotationAngle = (int)(Mathf.Rad2Deg * Mathf.Atan2(displacement.y, displacement.x));
+                        dynamicRotation = false;
 
-                    Debug.Log("trigger");
+                        Debug.Log("trigger");
+                    }
+
+                    GUIUtility.RotateAroundPivot(dynamicRotationAngle + rotation + Random.Range(-180 * rotationVariance, 180 * rotationVariance), new Vector2(mousePosition.x, mousePosition.y));
+
+                    int size = scale + Random.Range(-scaleVariance, scaleVariance);
+                    Vector2 position = new Vector2(mousePosition.x + Random.Range(-positionVariance.x, positionVariance.x), mousePosition.y + Random.Range(-positionVariance.y, positionVariance.y));
+
+                    Graphics.DrawTexture(new Rect(position.x - size / 2, position.y - size / 2, size, size), brushPattern, new Rect(0, 0, 1, 1), 0, 0, 0, 0, brushColor, null, -1);
+
+                    GL.PopMatrix();
+                    RenderTexture.active = null;
                 }
-
-                GUIUtility.RotateAroundPivot(rotation + Random.Range(-180 * rotationVariance, 180 * rotationVariance), new Vector2(mousePosition.x, mousePosition.y));
-
-                int size = scale + Random.Range(-scaleVariance, scaleVariance);
-                Vector2 position = new Vector2(mousePosition.x + Random.Range(-positionVariance.x, positionVariance.x), mousePosition.y + Random.Range(-positionVariance.y, positionVariance.y));
-
-                Graphics.DrawTexture(new Rect(position.x - size / 2, position.y - size / 2, size, size), brushPattern, new Rect(0, 0, 1, 1), 0, 0, 0, 0, brushColor, null, -1);
-                
-                GL.PopMatrix();
-                RenderTexture.active = null;
             }
         }
     }

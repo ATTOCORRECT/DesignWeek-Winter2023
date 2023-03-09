@@ -12,71 +12,61 @@ public class CameraRotation : MonoBehaviour
     [SerializeField] float rotationSpeed;
     Vector3 targetEulerAngles;
     Vector3 currentEulerAngles;
-    [SerializeField] float y;
-    //float yAngleModulus;
 
-    bool turnLeft;
-    bool turnRight;
+    int[] targetRotation = { 0, 90, 180, 270 };
+    int  targetRotationIndex = 0;
 
+    private void Start()
+    {
+        currentEulerAngles = mCamera.transform.eulerAngles;
+        targetEulerAngles = currentEulerAngles;
+    }
     // Update is called once per frame
     void Update()
     {
         //Debug.Log(currentEulerAngles);
         //Debug.Log(targetEulerAngles);
         //Debug.Log(y);
-        currentEulerAngles += new Vector3(0, y, 0) * Time.deltaTime * rotationSpeed;
+        currentEulerAngles = new Vector3(0, Mathf.LerpAngle(currentEulerAngles.y, targetRotation[targetRotationIndex], 0.1f),0);
+
+        if (Mathf.Abs(Mathf.DeltaAngle(currentEulerAngles.y, targetRotation[targetRotationIndex])) < 0.1f)
+        {
+            currentEulerAngles.y = targetRotation[targetRotationIndex];
+        }
+
         mCamera.transform.eulerAngles = currentEulerAngles;
 
-        if(turnLeft)
+        if (Mathf.Abs(Mathf.DeltaAngle(currentEulerAngles.y, targetRotation[targetRotationIndex])) > 1)
         {
-            if (currentEulerAngles.y >= targetEulerAngles.y)
-            {
-                y = -1;
-                leftButton.GetComponent<Button>().interactable = false;
-                rightButton.GetComponent<Button>().interactable = false;
-            }
-            else if (currentEulerAngles.y <= targetEulerAngles.y)
-            {
-                y = 0;
-                turnLeft = false;
-                leftButton.GetComponent<Button>().interactable = true;
-                rightButton.GetComponent<Button>().interactable = true;
-            }
+            leftButton.GetComponent<Button>().interactable = false;
+            rightButton.GetComponent<Button>().interactable = false;
         }
-        if(turnRight)
+        else
         {
-            if (currentEulerAngles.y <= targetEulerAngles.y)
-            {
-                y = 1;
-                leftButton.GetComponent<Button>().interactable = false;
-                rightButton.GetComponent<Button>().interactable = false;
-            }
-            else if (currentEulerAngles.y >= targetEulerAngles.y)
-            {
-                y = 0;
-                turnRight = false;
-                leftButton.GetComponent<Button>().interactable = true;
-                rightButton.GetComponent<Button>().interactable = true;
-            }
+            leftButton.GetComponent<Button>().interactable = true;
+            rightButton.GetComponent<Button>().interactable = true;
         }
     }
 
     public void RotateCameraLeft()
     {
-        turnLeft = true;
-        currentEulerAngles = mCamera.transform.eulerAngles;
-        targetEulerAngles = currentEulerAngles + new Vector3(0, -90, 0);
+        targetRotationIndex--;
+        targetRotationIndex = (int)mod(targetRotationIndex, 4);
     }
 
     public void RotateCamerRight()
     {
-        turnRight = true;
-        currentEulerAngles = mCamera.transform.eulerAngles;
-        targetEulerAngles = currentEulerAngles + new Vector3(0, 90, 0);
+        targetRotationIndex++;
+        targetRotationIndex = (int)mod(targetRotationIndex, 4);
     }
 
     IEnumerator RotateLeft()
     {
         yield return null;
+    }
+
+    float mod(float x, float m) // i hate C# why do i even have to do this
+    {
+        return (x % m + m) % m;
     }
 }

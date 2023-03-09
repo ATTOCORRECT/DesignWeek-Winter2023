@@ -6466,7 +6466,6 @@ MonoBehaviour:
   leftButton: {fileID: 1457340501}
   rightButton: {fileID: 766947510}
   rotationSpeed: 150
-  y: 0
 --- !u!4 &1992014297
 Transform:
   m_ObjectHideFlags: 0

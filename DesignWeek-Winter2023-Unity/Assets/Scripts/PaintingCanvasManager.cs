@@ -23,6 +23,7 @@ public class PaintingCanvasManager : MonoBehaviour
     BrushManager brushManager;
 
     bool mouseDown = false;
+    bool dynamicRotation = false;
     void Start()
     {
         brushManager = GameObject.Find("Brush Manager").GetComponent<BrushManager>();
@@ -48,6 +49,7 @@ public class PaintingCanvasManager : MonoBehaviour
                 {
                     mouseDown = true;
                 }
+                dynamicRotation = true;
                 break;
 
             case 2: // stamp
@@ -74,10 +76,22 @@ public class PaintingCanvasManager : MonoBehaviour
             {
                 mouseDown = false;
 
-                Vector2 mousePosition = new Vector2(Input.mousePosition.x - topLeft.x, topLeft.y - Input.mousePosition.y);
+                Vector2 oldMousePosition = mousePosition;
+
+                mousePosition = new Vector2(Input.mousePosition.x - topLeft.x, topLeft.y - Input.mousePosition.y);
+
+                Vector2 displacement = mousePosition - oldMousePosition;
 
                 RenderTexture.active = renderTexture;
                 GL.PushMatrix();
+
+                if (dynamicRotation)
+                {
+                    rotation = (int)(Mathf.Rad2Deg * Mathf.Atan2(displacement.y, displacement.x));
+                    dynamicRotation = false;
+
+                    Debug.Log("trigger");
+                }
 
                 GUIUtility.RotateAroundPivot(rotation + Random.Range(-180 * rotationVariance, 180 * rotationVariance), new Vector2(mousePosition.x, mousePosition.y));
 

@@ -10,7 +10,7 @@ public class BrushManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(lastUsedColor);
+        //Debug.Log(lastUsedColor);
     }
 
     private void Awake()

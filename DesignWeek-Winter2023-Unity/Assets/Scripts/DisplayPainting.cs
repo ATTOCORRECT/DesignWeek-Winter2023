@@ -21,14 +21,17 @@ public class DisplayPainting : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        pallette.GetComponent<PaletteManager>().colorPaletteMaterials.AddRange(paint.paintingColors);
+        //pallette.GetComponent<PaletteManager>().colorPaletteMaterials.AddRange(paint.paintingColors);
         //paintMask = paint.paintingMask;
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<MeshRenderer>().material.mainTexture = paint.paintingTexture;
+        if(paint != null)
+        {
+            GetComponent<MeshRenderer>().material.mainTexture = paint.paintingTexture;
+        } 
     }
 
     public Texture2D GetPaitningTexture()

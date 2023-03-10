@@ -13,8 +13,10 @@ public class PaintingManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PaintingDisplay.GetComponent<DisplayPainting>().paint = PaintingRandomizer();
+    
         PaintingDisplay = GameObject.Find("PaintingDisplay").GetComponent<DisplayPainting>();
+        PaintingDisplay.GetComponent<DisplayPainting>().paint = PaintingRandomizer();
+        NextPainting();
     }
 
     Painting PaintingRandomizer()
@@ -25,9 +27,10 @@ public class PaintingManager : MonoBehaviour
     }
     public void NextPainting()
     {
+       
         //DisplayPainting.instance.GeneratePainting();
         PaintingDisplay = GameObject.Find("PaintingDisplay").GetComponent<DisplayPainting>();
-        //paint = PaintingRandomizer();
+        PaintingDisplay.paint = PaintingRandomizer();
         PaintingDisplay.GetComponent<DisplayPainting>().paint = PaintingRandomizer();
         pallette.GetComponent<PaletteManager>().colorPaletteMaterials.Clear();
         pallette.GetComponent<PaletteManager>().colorPaletteMaterials.AddRange(PaintingDisplay.GetComponent<DisplayPainting>().paint.paintingColors);

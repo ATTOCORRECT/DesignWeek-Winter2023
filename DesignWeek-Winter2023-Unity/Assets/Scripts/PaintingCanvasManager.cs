@@ -156,15 +156,55 @@ public class PaintingCanvasManager : MonoBehaviour
     }
     public void ExportPaintingCanvas()
     {
+        Debug.Log("Export painting");
         string pngOutPath = @"";
 
-        var tex = GameObject.Find("PaintingDisplay").GetComponent<DisplayPainting>().GetPaitningTexture();
-        RenderTexture.active = renderTexture;
-        tex.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
-        tex.Apply();
+        Texture2D texture1 = GameObject.Find("PaintingDisplay").GetComponent<DisplayPainting>().GetPaitningTexture();
 
-        File.WriteAllBytes(pngOutPath + System.DateTime.Now.ToString("yyyy-mm-dd-hh-mm-ss") + ".png", tex.EncodeToPNG());
-        //File.WriteAllBytes("texture.png", tex.EncodeToPNG());
+        Texture2D texture2 = new Texture2D(renderTexture.width, renderTexture.height);
+        RenderTexture.active = renderTexture;
+        texture2.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
+        texture2.Apply();
         RenderTexture.active = null;
+
+
+        Texture2D finalTexture = AddWatermark(texture1, texture2);
+
+        File.WriteAllBytes(pngOutPath + System.DateTime.Now.ToString("yyyy-mm-dd-hh-mm-ss") + ".png", finalTexture.EncodeToPNG());
+        //File.WriteAllBytes("texture.png", tex.EncodeToPNG());
+
+        ClearOutRenderTexture(renderTexture);
+    }
+
+    public Texture2D AddWatermark(Texture2D background, Texture2D watermark)
+    {
+
+        int startX = 0;
+        int startY = background.height - watermark.height;
+
+        for (int x = startX; x < background.width; x++)
+        {
+
+            for (int y = startY; y < background.height; y++)
+            {
+                Color bgColor = background.GetPixel(x, y);
+                Color wmColor = watermark.GetPixel(x - startX, y - startY);
+
+                Color final_color = Color.Lerp(bgColor, wmColor, wmColor.a / 1.0f);
+
+                background.SetPixel(x, y, final_color);
+            }
+        }
+
+        background.Apply();
+        return background;
+    }
+
+    public void ClearOutRenderTexture(RenderTexture renderTexture)
+    {
+        RenderTexture rt = RenderTexture.active;
+        RenderTexture.active = renderTexture;
+        GL.Clear(true, true, Color.clear);
+        RenderTexture.active = rt;
     }
 }

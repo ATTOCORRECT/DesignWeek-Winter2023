@@ -15,13 +15,14 @@ public class PaletteManager : MonoBehaviour
     }
     private void Update()
     {
+        
+    }
+    public void setColorToPalette(int colorIndex)
+    {
         for (int i = 0; i < colorPaletteMaterials.Count; i++)
         {
             colorsInScene[i].GetComponent<MeshRenderer>().material = colorPaletteMaterials[i];
         }
-    }
-    public void setColorToPalette(int colorIndex)
-    {
         Color color = colorPaletteMaterials[colorIndex].color;
         PaintingCanvas.GetComponent<PaintingCanvasManager>().setBrushColor(color);
     }

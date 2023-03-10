@@ -2334,7 +2334,7 @@ MonoBehaviour:
   - {fileID: 2021393733}
   - {fileID: 432524326}
   colorPaletteMaterials: []
-  PaintingCanvas: {fileID: 832321987}
+  PaintingCanvas: {fileID: 1721914259}
 --- !u!1 &1276029944
 GameObject:
   m_ObjectHideFlags: 0

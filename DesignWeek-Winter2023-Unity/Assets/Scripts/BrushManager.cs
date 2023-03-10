@@ -92,7 +92,7 @@ public class BrushManager : MonoBehaviour
         {
             if (this.lastUsedColor == Color.magenta)
             {
-                GameObject.Find("Palette Manager").GetComponent<PaletteManager>().setColorToPalette(0);
+                GameObject.Find("Pallette").GetComponent<PaletteManager>().setColorToPalette(0);
             }
             else
             {

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged MadameX SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: cb799227af942a241b9673f91ad3c9ab, type: 2}
+  paintingTexture: {fileID: 2800000, guid: 9425ff2d1bf5f0d4eaa7482459cab661, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: 0891fcf7a940b0749b10148d6c8d4006, type: 2}
   - {fileID: 2100000, guid: 5b58d456f3717da4aa5b72d0553f8199, type: 2}

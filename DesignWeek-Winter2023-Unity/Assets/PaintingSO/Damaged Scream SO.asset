@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged Scream SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: f2ca1bbc81e11ed4d9dc0272163c7ffd, type: 2}
+  paintingTexture: {fileID: 2800000, guid: 1ddfc6ab50b01164095db9de9a3bd01a, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: 4d300bff01e19a84ba6cd165bb4c44be, type: 2}
   - {fileID: 2100000, guid: d57acb2240de01244b1851b47c831d49, type: 2}

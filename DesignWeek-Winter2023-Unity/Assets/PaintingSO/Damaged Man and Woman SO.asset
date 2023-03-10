@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged Man and Woman SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: dd45f40dfd256844d94700ffe222bb15, type: 2}
+  paintingTexture: {fileID: 2800000, guid: 8b5301e31112cb645b33477c5ede1691, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: 6a34d1cd4f895834a94a3173f2efc9f8, type: 2}
   - {fileID: 2100000, guid: 136bc09035792a1498e378f14059e8a5, type: 2}

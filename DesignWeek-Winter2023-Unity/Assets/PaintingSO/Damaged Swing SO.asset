@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged Swing SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: 1af8d745f4cc44c40b9cfee42e1168eb, type: 2}
+  paintingTexture: {fileID: 2800000, guid: 038e73fd8342f2f4e941f13bf4e2264d, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: 2d8c2ae4749bf7c4194f1e47562749fc, type: 2}
   - {fileID: 2100000, guid: 1c261882e975a8040b92508113873acf, type: 2}

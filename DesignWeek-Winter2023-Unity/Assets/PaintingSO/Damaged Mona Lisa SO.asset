@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged Mona Lisa SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: c957e066d99d7c4408801961e85e6c9b, type: 2}
+  paintingTexture: {fileID: 2800000, guid: 690da08b8887ea548b2614d8d7acbd95, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: 6d548d933b60a684eab4d423d6ee034e, type: 2}
   - {fileID: 2100000, guid: 4ab146e428a3e8140bfdfff7fafef878, type: 2}

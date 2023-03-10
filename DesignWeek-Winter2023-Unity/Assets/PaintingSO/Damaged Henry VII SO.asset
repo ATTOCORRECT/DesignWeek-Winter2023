@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged Henry VII SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: c2664f29aa0a1234a8d25c66a9487f3d, type: 2}
+  paintingTexture: {fileID: 2800000, guid: ed3efd685abf94143ab451308b44c756, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: b6145e33fc0eaaa459ddee65af029525, type: 2}
   - {fileID: 2100000, guid: 6a79f6f7d6ceb514ebe7920551ffbcdf, type: 2}

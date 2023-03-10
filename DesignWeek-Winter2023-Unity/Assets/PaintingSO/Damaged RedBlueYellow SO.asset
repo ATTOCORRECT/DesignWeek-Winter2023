@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged RedBlueYellow SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: 856311bfba5e3ff468144224469e6e95, type: 2}
+  paintingTexture: {fileID: 2800000, guid: 2a482f6fad208a14794fe18895fd24be, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: eedb47c2272cbf6409377fc8df0e490f, type: 2}
   - {fileID: 2100000, guid: 6091267288d6d7945b43b5247825a0b7, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged Lady Agney SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: 4c273d0a1d32baf4f981cd3872877ca9, type: 2}
+  paintingTexture: {fileID: 2800000, guid: 94e411669b88a964bba4639addef86e6, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: 6f4182e00caae9a48b4d83f51c713407, type: 2}
   - {fileID: 2100000, guid: cfbe9793e497c734bb4e3ac19b435245, type: 2}

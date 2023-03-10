@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged Pearl Earrings SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: af5e5dbe1b1d15f44a275d79c95bbe17, type: 2}
+  paintingTexture: {fileID: 2800000, guid: 0928f5085f5c55146a0016bb6ed87a8b, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: b5999bd852856ae4f88a186eaf824473, type: 2}
   - {fileID: 2100000, guid: a86e18efff4b58944b6300f143b484d0, type: 2}

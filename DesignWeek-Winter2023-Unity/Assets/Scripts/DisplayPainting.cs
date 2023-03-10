@@ -18,6 +18,5 @@ public class DisplayPainting : MonoBehaviour
     void Update()
     {
         GetComponent<MeshRenderer>().material = paint.paintingMat;
-        pallette.GetComponent<PaletteManager>().colorPaletteMaterials.AddRange(paint.paintingColors);
     }
 }

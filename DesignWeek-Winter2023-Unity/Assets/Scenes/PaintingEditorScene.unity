@@ -1212,9 +1212,21 @@ MonoBehaviour:
   PaintingDisplay: {fileID: 1808566161}
   pallette: {fileID: 1268402553}
   paintings:
-  - {fileID: 11400000, guid: 9832f2bb4c9ca3442b2c2d4fd1594053, type: 2}
-  - {fileID: 11400000, guid: 15336faf9e148eb4db71a8b5679be067, type: 2}
-  - {fileID: 11400000, guid: ecf922bf9092331409cec0fe56d7bb25, type: 2}
+  - {fileID: 11400000, guid: eeb61a6be6e123f439b416ef9b2a6633, type: 2}
+  - {fileID: 11400000, guid: 5995b5d37de26e941978f5ce1fdf78eb, type: 2}
+  - {fileID: 11400000, guid: eabe673d0a90f784f9b14c05a88ba0db, type: 2}
+  - {fileID: 11400000, guid: d8c0bf8c75e1e5742a18d4c913448548, type: 2}
+  - {fileID: 11400000, guid: 3092b7497912ea54083b61769c9489de, type: 2}
+  - {fileID: 11400000, guid: 089ec06a613c5ef44832f970255b8c64, type: 2}
+  - {fileID: 11400000, guid: 6049a69782fd916459500196292c1db1, type: 2}
+  - {fileID: 11400000, guid: 24864efcae5ab484e959cf2a2881253c, type: 2}
+  - {fileID: 11400000, guid: 857dfaad9ecc5c544bb390ad5ed35f8a, type: 2}
+  - {fileID: 11400000, guid: 7308333456054d540bba37a66937ba5d, type: 2}
+  - {fileID: 11400000, guid: e25e64d58fb8163448cd54036549bee9, type: 2}
+  - {fileID: 11400000, guid: f5c95e28ba81d5a48bea83628948338e, type: 2}
+  - {fileID: 11400000, guid: 1e310afecd3772e4ba9def7fe403fba0, type: 2}
+  - {fileID: 11400000, guid: b4fe791963ecb1a4eacecc7de26d1888, type: 2}
+  - {fileID: 11400000, guid: 3a66776df0ff2fa489ef98309e91b353, type: 2}
 --- !u!1 &644950247
 GameObject:
   m_ObjectHideFlags: 0

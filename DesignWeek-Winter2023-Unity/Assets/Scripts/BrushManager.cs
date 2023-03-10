@@ -3,17 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 public class BrushManager : MonoBehaviour
 {
+    public static BrushManager instance { get; private set; }
     public Texture2D[] brushTextures;
     int brushIndex = 0;
     Color lastUsedColor = Color.magenta;
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
 
     private void Update()
     {
         Debug.Log(lastUsedColor);
+    }
+
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+    private void Start()
+    {
+        
     }
 
     public void GetBrush(GameObject PaintingCanvas)

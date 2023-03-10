@@ -100,7 +100,7 @@ public class PaintingCanvasManager : MonoBehaviour
                         dynamicRotationAngle = (int)(Mathf.Rad2Deg * Mathf.Atan2(displacement.y, displacement.x));
                         dynamicRotation = false;
 
-                        Debug.Log("trigger");
+                        //Debug.Log("trigger");
                     }
 
                     GUIUtility.RotateAroundPivot(dynamicRotationAngle + rotation + Random.Range(-180 * rotationVariance, 180 * rotationVariance), new Vector2(mousePosition.x, mousePosition.y));

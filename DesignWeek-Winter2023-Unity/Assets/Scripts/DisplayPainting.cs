@@ -7,20 +7,19 @@ public class DisplayPainting : MonoBehaviour
     public static DisplayPainting instance { get; private set; }
     public Painting paint;
     public GameObject pallette;
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
+
     // Start is called before the first frame update
     void Start()
     {
         if(instance != null && instance != this)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
+            return;
         }
         else
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         pallette.GetComponent<PaletteManager>().colorPaletteMaterials.AddRange(paint.paintingColors);
         //paintMask = paint.paintingMask;
@@ -36,5 +35,10 @@ public class DisplayPainting : MonoBehaviour
     {
         Texture2D texure =  paint.paintingTexture as Texture2D;
         return texure;
+    }
+
+    public void GeneratePainting()
+    {
+        
     }
 }

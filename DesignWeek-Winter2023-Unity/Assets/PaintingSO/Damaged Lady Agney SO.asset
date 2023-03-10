@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged Lady Agney SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: 4c273d0a1d32baf4f981cd3872877ca9, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: 6f4182e00caae9a48b4d83f51c713407, type: 2}
+  - {fileID: 2100000, guid: cfbe9793e497c734bb4e3ac19b435245, type: 2}
+  - {fileID: 2100000, guid: 9b81f2bb34e03154685f7ced3257891e, type: 2}
+  - {fileID: 2100000, guid: d215ff9dacab4ae42b25347d059b3eae, type: 2}
+  - {fileID: 2100000, guid: 26938512e723f7747bfcd639acbc66d3, type: 2}

@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged Man and Woman SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: dd45f40dfd256844d94700ffe222bb15, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: 6a34d1cd4f895834a94a3173f2efc9f8, type: 2}
+  - {fileID: 2100000, guid: 136bc09035792a1498e378f14059e8a5, type: 2}
+  - {fileID: 2100000, guid: 93962a7be9e858e419cd8718f290db13, type: 2}
+  - {fileID: 2100000, guid: 5fc7a6a74521aa64c9d8b766cba4f23a, type: 2}
+  - {fileID: 2100000, guid: 94ded8b3969b24a4081b3dd50f25ff82, type: 2}

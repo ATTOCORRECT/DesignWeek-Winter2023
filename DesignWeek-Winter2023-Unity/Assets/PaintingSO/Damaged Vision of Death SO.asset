@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged Vision of Death SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: 084a3a908b7647f44ab33c56eaf4a8a3, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: 0bc7d23b7d7f75c47917e6a0d2f070fc, type: 2}
+  - {fileID: 2100000, guid: dcd7f4b1034382b4a890ba0128d6a1ee, type: 2}
+  - {fileID: 2100000, guid: b13900528a94f5a4fbc6e5f8b471bb98, type: 2}
+  - {fileID: 2100000, guid: 9673776c7be569a4ba15abd03ce6f0ea, type: 2}
+  - {fileID: 2100000, guid: 3c648d28f74cdb7488caea4e2568d52c, type: 2}

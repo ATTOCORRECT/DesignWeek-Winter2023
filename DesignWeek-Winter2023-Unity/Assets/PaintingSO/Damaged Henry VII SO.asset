@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged Henry VII SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: c2664f29aa0a1234a8d25c66a9487f3d, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: b6145e33fc0eaaa459ddee65af029525, type: 2}
+  - {fileID: 2100000, guid: 6a79f6f7d6ceb514ebe7920551ffbcdf, type: 2}
+  - {fileID: 2100000, guid: eaca8f05a2979314e8c080e07d3b036e, type: 2}
+  - {fileID: 2100000, guid: 3aab55e3091cd5b4ea3899c87bac4583, type: 2}
+  - {fileID: 2100000, guid: bcb312243485fd04e9d59a41fed3f649, type: 2}

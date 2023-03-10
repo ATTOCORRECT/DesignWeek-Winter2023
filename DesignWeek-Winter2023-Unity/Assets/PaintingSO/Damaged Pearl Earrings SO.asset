@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged Pearl Earrings SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: af5e5dbe1b1d15f44a275d79c95bbe17, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: b5999bd852856ae4f88a186eaf824473, type: 2}
+  - {fileID: 2100000, guid: a86e18efff4b58944b6300f143b484d0, type: 2}
+  - {fileID: 2100000, guid: dc5be0ac4afcaaa49aa95a5526900631, type: 2}
+  - {fileID: 2100000, guid: 0bc16b5350a8f344d9b621957f6d8ce1, type: 2}
+  - {fileID: 2100000, guid: 4f4e9cb2c7ef7bc4ba19cdcd8534d1de, type: 2}

@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged Parasol SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: 699bb5439294e6d4ba651fd65afeda5d, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: 5136f14e1b2184a46badf2d334198683, type: 2}
+  - {fileID: 2100000, guid: 5ca1400681a510340b683f3430480ae8, type: 2}
+  - {fileID: 2100000, guid: 4e6e573820e68e24fbdcd05964f8bfba, type: 2}
+  - {fileID: 2100000, guid: 950f8717c43d0424dbb8b145760adb84, type: 2}
+  - {fileID: 2100000, guid: a30908000bfeb054aae94c71b5a84fb5, type: 2}

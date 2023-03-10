@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged Wanderer SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: 9c5a04559901a5746acd9a04ac2ea75a, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: b16302d6293d95248ada3379a106f731, type: 2}
+  - {fileID: 2100000, guid: 2b1bb05f55da51f489c8249fe4a661ad, type: 2}
+  - {fileID: 2100000, guid: 16cc028b92bc6094f999606bd70c0777, type: 2}
+  - {fileID: 2100000, guid: 70e8fee8421775c47adec4665fb71670, type: 2}
+  - {fileID: 2100000, guid: 40a5b13385722394ba0a24454061f780, type: 2}

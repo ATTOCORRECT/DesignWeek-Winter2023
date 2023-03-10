@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged RedBlueYellow SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: 856311bfba5e3ff468144224469e6e95, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: eedb47c2272cbf6409377fc8df0e490f, type: 2}
+  - {fileID: 2100000, guid: 6091267288d6d7945b43b5247825a0b7, type: 2}
+  - {fileID: 2100000, guid: e3a292074ffafe941bb41ccc7f71215e, type: 2}
+  - {fileID: 2100000, guid: 48265c2cb11674142bf1a89b1d19d41b, type: 2}
+  - {fileID: 2100000, guid: 27185bae5365e5b4d8c1374cbc9ee730, type: 2}

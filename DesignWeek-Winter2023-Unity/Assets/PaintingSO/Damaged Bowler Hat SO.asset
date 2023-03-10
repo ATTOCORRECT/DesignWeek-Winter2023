@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged Bowler Hat SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: 3f039546e1201e647875a487456ebc43, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: 715a7ad926f87ad45a4b8da312b44be8, type: 2}
+  - {fileID: 2100000, guid: 8e26be799d7841b4ea8c942fc9463853, type: 2}
+  - {fileID: 2100000, guid: 9ed92c92407eeb44c83e616a1b82bd5a, type: 2}
+  - {fileID: 2100000, guid: c7872f590c8665045b9842fcfa7cf831, type: 2}
+  - {fileID: 2100000, guid: 4f306d0321ccae14bb2b5fba147e60e7, type: 2}

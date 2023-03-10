@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Damaged Mona Lisa SO
   m_EditorClassIdentifier: 
   paintingMat: {fileID: 2100000, guid: c957e066d99d7c4408801961e85e6c9b, type: 2}
-  paintingColors: []
+  paintingColors:
+  - {fileID: 2100000, guid: 6d548d933b60a684eab4d423d6ee034e, type: 2}
+  - {fileID: 2100000, guid: 4ab146e428a3e8140bfdfff7fafef878, type: 2}
+  - {fileID: 2100000, guid: 62d3e6c0f0affe14ebc143fb7b9252ec, type: 2}
+  - {fileID: 2100000, guid: cd12a2f1251b4104896a052f1beb0b1f, type: 2}
+  - {fileID: 2100000, guid: 816ea23f86f25974c8d9fa0fc9730ddc, type: 2}

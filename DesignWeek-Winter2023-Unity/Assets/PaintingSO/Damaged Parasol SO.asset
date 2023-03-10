@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
+  m_Name: Damaged Parasol SO
+  m_EditorClassIdentifier: 
+  paintingMat: {fileID: 2100000, guid: 699bb5439294e6d4ba651fd65afeda5d, type: 2}
+  paintingColors:
+  - {fileID: 2100000, guid: 5136f14e1b2184a46badf2d334198683, type: 2}
+  - {fileID: 2100000, guid: 5ca1400681a510340b683f3430480ae8, type: 2}
+  - {fileID: 2100000, guid: 4e6e573820e68e24fbdcd05964f8bfba, type: 2}
+  - {fileID: 2100000, guid: 950f8717c43d0424dbb8b145760adb84, type: 2}
+  - {fileID: 2100000, guid: a30908000bfeb054aae94c71b5a84fb5, type: 2}

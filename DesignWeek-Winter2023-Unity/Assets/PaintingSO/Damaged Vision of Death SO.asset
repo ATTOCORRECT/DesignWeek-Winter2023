@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
+  m_Name: Damaged Vision of Death SO
+  m_EditorClassIdentifier: 
+  paintingMat: {fileID: 2100000, guid: 084a3a908b7647f44ab33c56eaf4a8a3, type: 2}
+  paintingColors:
+  - {fileID: 2100000, guid: 0bc7d23b7d7f75c47917e6a0d2f070fc, type: 2}
+  - {fileID: 2100000, guid: dcd7f4b1034382b4a890ba0128d6a1ee, type: 2}
+  - {fileID: 2100000, guid: b13900528a94f5a4fbc6e5f8b471bb98, type: 2}
+  - {fileID: 2100000, guid: 9673776c7be569a4ba15abd03ce6f0ea, type: 2}
+  - {fileID: 2100000, guid: 3c648d28f74cdb7488caea4e2568d52c, type: 2}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
+  m_Name: Damaged Saturn SO
+  m_EditorClassIdentifier: 
+  paintingMat: {fileID: 2100000, guid: 2b2b8ab183342ce4b9f112fc3d6c2ece, type: 2}
+  paintingColors:
+  - {fileID: 2100000, guid: 95a767307cfddb14c9d53c0c1a040899, type: 2}
+  - {fileID: 2100000, guid: c015b9363dc1cec48a06a05e5bb0257f, type: 2}
+  - {fileID: 2100000, guid: a7d59360cddf08b4a819e53693ba9b3d, type: 2}
+  - {fileID: 2100000, guid: 82a5e390e47c0f5439550e7597bd9fec, type: 2}
+  - {fileID: 2100000, guid: ccfac64269671b146a803e9269f8cb25, type: 2}

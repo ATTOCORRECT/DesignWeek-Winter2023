@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
+  m_Name: Damaged RedBlueYellow SO
+  m_EditorClassIdentifier: 
+  paintingMat: {fileID: 2100000, guid: 856311bfba5e3ff468144224469e6e95, type: 2}
+  paintingColors:
+  - {fileID: 2100000, guid: eedb47c2272cbf6409377fc8df0e490f, type: 2}
+  - {fileID: 2100000, guid: 6091267288d6d7945b43b5247825a0b7, type: 2}
+  - {fileID: 2100000, guid: e3a292074ffafe941bb41ccc7f71215e, type: 2}
+  - {fileID: 2100000, guid: 48265c2cb11674142bf1a89b1d19d41b, type: 2}
+  - {fileID: 2100000, guid: 27185bae5365e5b4d8c1374cbc9ee730, type: 2}

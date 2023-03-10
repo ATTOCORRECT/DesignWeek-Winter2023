@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
+  m_Name: Damaged Scream SO
+  m_EditorClassIdentifier: 
+  paintingMat: {fileID: 2100000, guid: f2ca1bbc81e11ed4d9dc0272163c7ffd, type: 2}
+  paintingColors:
+  - {fileID: 2100000, guid: 4d300bff01e19a84ba6cd165bb4c44be, type: 2}
+  - {fileID: 2100000, guid: d57acb2240de01244b1851b47c831d49, type: 2}
+  - {fileID: 2100000, guid: 668bd1c871eb3bd4e9c68e8378cafb73, type: 2}
+  - {fileID: 2100000, guid: c4cb272731d0c8c4ea2ae884bbf64552, type: 2}
+  - {fileID: 2100000, guid: f51352d35b1d4d643878ff5c43cd9cb2, type: 2}

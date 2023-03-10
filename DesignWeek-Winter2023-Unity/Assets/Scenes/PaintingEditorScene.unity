@@ -366,7 +366,7 @@ GameObject:
   m_Layer: 5
   m_Name: Colour 1 Button
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -385,11 +385,11 @@ RectTransform:
   m_Father: {fileID: 979832100}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -764, y: -167.2}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 24, y: -96}
   m_SizeDelta: {x: 160, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &241045894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,7 +434,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1727576864}
+      - m_Target: {fileID: 1268402555}
         m_TargetAssemblyTypeName: PaletteManager, Assembly-CSharp
         m_MethodName: setColorToPalette
         m_Mode: 3
@@ -459,15 +459,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: cdb7986665594984389e4f9f036ab458, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -545,7 +545,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &258131223
 MonoBehaviour:
@@ -643,7 +643,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 641779900}
         m_TargetAssemblyTypeName: PaintingManager, Assembly-CSharp
         m_MethodName: NextPainting
         m_Mode: 1
@@ -727,6 +727,16 @@ Transform:
   m_Father: {fileID: 722367494}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &432524326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -185269342363941756, guid: 86e48638fa2ccdd43b7c5601e179c530, type: 3}
+  m_PrefabInstance: {fileID: 1979027412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &504024175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6377642210870307867, guid: 86e48638fa2ccdd43b7c5601e179c530, type: 3}
+  m_PrefabInstance: {fileID: 1979027412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &511438575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1163,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &641779898
 GameObject:
@@ -1200,6 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PaintingDisplay: {fileID: 1808566161}
+  pallette: {fileID: 1268402553}
   paintings:
   - {fileID: 11400000, guid: 9832f2bb4c9ca3442b2c2d4fd1594053, type: 2}
   - {fileID: 11400000, guid: 15336faf9e148eb4db71a8b5679be067, type: 2}
@@ -1581,6 +1592,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &957059476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8088470099560081915, guid: 86e48638fa2ccdd43b7c5601e179c530, type: 3}
+  m_PrefabInstance: {fileID: 1979027412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &979832096
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,7 +1698,7 @@ RectTransform:
   - {fileID: 25424033}
   - {fileID: 262391138}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1723,11 +1739,11 @@ RectTransform:
   m_Father: {fileID: 979832100}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -568.8, y: 212}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 118, y: 117}
   m_SizeDelta: {x: 160, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1132572899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1772,7 +1788,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1727576864}
+      - m_Target: {fileID: 1268402555}
         m_TargetAssemblyTypeName: PaletteManager, Assembly-CSharp
         m_MethodName: setColorToPalette
         m_Mode: 3
@@ -2044,11 +2060,11 @@ RectTransform:
   m_Father: {fileID: 979832100}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -497, y: 34}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 172, y: 29}
   m_SizeDelta: {x: 160, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1160966267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2093,7 +2109,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1727576864}
+      - m_Target: {fileID: 1268402555}
         m_TargetAssemblyTypeName: PaletteManager, Assembly-CSharp
         m_MethodName: setColorToPalette
         m_Mode: 3
@@ -2292,13 +2308,33 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1268402553 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86e48638fa2ccdd43b7c5601e179c530, type: 3}
   m_PrefabInstance: {fileID: 1979027412}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1268402555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268402553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3678c8129f2b8ff4eb8ca38ec7577380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorsInScene:
+  - {fileID: 504024175}
+  - {fileID: 957059476}
+  - {fileID: 1728524524}
+  - {fileID: 2021393733}
+  - {fileID: 432524326}
+  colorPaletteMaterials: []
+  PaintingCanvas: {fileID: 832321987}
 --- !u!1 &1276029944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,11 +2369,11 @@ RectTransform:
   m_Father: {fileID: 979832100}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -742, y: 174}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 31, y: 93}
   m_SizeDelta: {x: 160, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1276029946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2382,7 +2418,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1727576864}
+      - m_Target: {fileID: 1268402555}
         m_TargetAssemblyTypeName: PaletteManager, Assembly-CSharp
         m_MethodName: setColorToPalette
         m_Mode: 3
@@ -2633,11 +2669,11 @@ RectTransform:
   m_Father: {fileID: 979832100}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -802, y: 7.8}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 13, y: 5}
   m_SizeDelta: {x: 160, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1573329172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2682,7 +2718,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1727576864}
+      - m_Target: {fileID: 1268402555}
         m_TargetAssemblyTypeName: PaletteManager, Assembly-CSharp
         m_MethodName: setColorToPalette
         m_Mode: 3
@@ -3110,57 +3146,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderTexture: {fileID: 8400000, guid: d1b678b61eac4c449bfb62b2665269f6, type: 2}
   brushPattern: {fileID: 2800000, guid: 9516c44b3e8f659428ab53dfe46f8f00, type: 3}
---- !u!1 &1727576862
+--- !u!1 &1728524524 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: -8100518474265080811, guid: 86e48638fa2ccdd43b7c5601e179c530, type: 3}
+  m_PrefabInstance: {fileID: 1979027412}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1727576863}
-  - component: {fileID: 1727576864}
-  m_Layer: 0
-  m_Name: Palette Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1727576863
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727576862}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14730948, y: 9.355347, z: -10.756419}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1727576864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727576862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3678c8129f2b8ff4eb8ca38ec7577380, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorPaletteMaterials:
-  - {fileID: 2100000, guid: 6aab109869bdbac44b7f55021822e7f0, type: 2}
-  - {fileID: 2100000, guid: 5ffcc69367867be4aa9f11a794547c6c, type: 2}
-  - {fileID: 2100000, guid: a917d77e896ea434aa425d5fac318722, type: 2}
-  - {fileID: 2100000, guid: b9c037d0a2a9b3948a7234495740d439, type: 2}
-  - {fileID: 2100000, guid: 0a7a990b4babf82468a9c251d3c4f832, type: 2}
-  PaintingCanvas: {fileID: 1721914259}
 --- !u!1 &1808566161
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,7 +3243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808566161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 5.25, z: -3.93}
+  m_LocalPosition: {x: 2.5, y: 5.25, z: -3.94}
   m_LocalScale: {x: 3, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3273,9 +3263,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 0}
-  paintMat: {fileID: 0}
-  currentColors: []
-  paintMask: {fileID: 0}
   pallette: {fileID: 1268402553}
 --- !u!1 &1830370096
 GameObject:
@@ -3495,3 +3482,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86e48638fa2ccdd43b7c5601e179c530, type: 3}
+--- !u!1 &2021393733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8313731389784012150, guid: 86e48638fa2ccdd43b7c5601e179c530, type: 3}
+  m_PrefabInstance: {fileID: 1979027412}
+  m_PrefabAsset: {fileID: 0}

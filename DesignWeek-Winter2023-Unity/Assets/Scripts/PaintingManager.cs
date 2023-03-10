@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PaintingManager : MonoBehaviour
 {
-    public GameObject PaintingDisplay;
+    public GameObject PaintingDisplay, pallette;
     [SerializeField] List<Painting> paintings;
     //[SerializeField] List<Material> usedMats;
     //Material currentMat;
@@ -15,11 +15,6 @@ public class PaintingManager : MonoBehaviour
         PaintingDisplay.GetComponent<DisplayPainting>().paint = PaintingRandomizer();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     Painting PaintingRandomizer()
     {
         int randomPaintIndex = Random.Range(0, paintings.Count);
@@ -28,7 +23,10 @@ public class PaintingManager : MonoBehaviour
     }
     public void NextPainting()
     {
+        //paint = PaintingRandomizer();
         PaintingDisplay.GetComponent<DisplayPainting>().paint = PaintingRandomizer();
+        pallette.GetComponent<PaletteManager>().colorPaletteMaterials.Clear();
+        pallette.GetComponent<PaletteManager>().colorPaletteMaterials.AddRange(PaintingDisplay.GetComponent<DisplayPainting>().paint.paintingColors);
     }
     //void MovePainting()
     //{

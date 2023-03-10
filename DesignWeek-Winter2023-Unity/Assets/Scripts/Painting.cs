@@ -7,7 +7,7 @@ using TMPro;
 public class Painting : ScriptableObject
 {
     public Material paintingMat;
-    public List<Material> paintingColors;
-    public Texture2D paintingMask;
-    public TextMeshProUGUI authorName;
+    public List<Material> paintingColors = new List<Material>();
+    //public Texture2D paintingMask;
+    //public TextMeshProUGUI authorName;
 }

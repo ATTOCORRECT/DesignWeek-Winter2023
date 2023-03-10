@@ -158,7 +158,7 @@ public class PaintingCanvasManager : MonoBehaviour
     {
         string pngOutPath = @"";
 
-        var tex = new Texture2D(renderTexture.width, renderTexture.height);
+        var tex = GameObject.Find("PaintingDisplay").GetComponent<DisplayPainting>().GetPaitningTexture();
         RenderTexture.active = renderTexture;
         tex.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
         tex.Apply();

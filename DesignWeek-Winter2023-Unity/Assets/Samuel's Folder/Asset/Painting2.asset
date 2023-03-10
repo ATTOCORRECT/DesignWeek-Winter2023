@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Painting2
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: c2664f29aa0a1234a8d25c66a9487f3d, type: 2}
+  paintingTexture: {fileID: 2800000, guid: ed3efd685abf94143ab451308b44c756, type: 3}
   paintingColors:
   - {fileID: 2100000, guid: 6aa653121a5e8ea4c8ce1dd0b0a0123d, type: 2}
   - {fileID: 2100000, guid: 16b34db40a96a4d409d065d02e31141a, type: 2}
   - {fileID: 2100000, guid: 1df183c1c7d43d74185431a8fd8f3194, type: 2}
   - {fileID: 2100000, guid: 9ee20f7cbaa293e4d9184373c5001a26, type: 2}
   - {fileID: 2100000, guid: 5d9c5948e20dd6a4581c9fa4a8f61f2c, type: 2}
-  paintingMask: {fileID: 0}
-  authorName: {fileID: 0}

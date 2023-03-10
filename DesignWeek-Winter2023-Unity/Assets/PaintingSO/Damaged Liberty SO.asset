@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab879caea0934e438a05c3e07b4cd62, type: 3}
   m_Name: Damaged Liberty SO
   m_EditorClassIdentifier: 
-  paintingMat: {fileID: 2100000, guid: a86cb4b272c11c84f85e0d0e0ab49033, type: 2}
+  paintingMat: {fileID: 2100000, guid: 70539eec9503a8242a82737f98608181, type: 2}
   paintingColors: []
